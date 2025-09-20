@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { environment } from '../../environments/environment';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError } from 'rxjs/operators';
@@ -49,7 +50,7 @@ export interface SchedulingPreferences {
   providedIn: 'root'
 })
 export class AvailabilityService {
-  private apiUrl = 'http://localhost:3000/api/availability';
+  private apiUrl = environment.apiUrl + '/availability';
 
   constructor(private http: HttpClient) {}
 
