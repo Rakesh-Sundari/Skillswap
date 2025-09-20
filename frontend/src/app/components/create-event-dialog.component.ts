@@ -10,7 +10,6 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { AuthService, User } from '../core/services/auth.service';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatNativeDateModule } from '@angular/material/core';
-import { QuillModule } from 'ngx-quill';
 
 @Component({
   selector: 'app-create-event-dialog',
