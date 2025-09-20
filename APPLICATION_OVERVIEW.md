@@ -14,6 +14,7 @@ SkillSwap is a comprehensive skill-sharing platform that connects people who wan
 ## 🏗️ Architecture
 
 ### Frontend (Angular)
+**Live Demo:** https://medhika.vercel.app/
 - **Framework**: Angular 17 with standalone components
 - **UI Library**: Custom components with modern CSS
 - **State Management**: Angular services with RxJS observables
