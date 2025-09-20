@@ -2720,7 +2720,7 @@ export class ScheduleComponent implements OnInit, OnDestroy {
       },
       error: (error) => {
         console.error('❌ Backend failed to respond to /status:', error);
-        console.log('💡 Check if backend is running on http://localhost:3000');
+  // console.log('💡 Check if backend is running on your production backend');
       }
     });
     
@@ -2975,7 +2975,7 @@ export class ScheduleComponent implements OnInit, OnDestroy {
     this.errorMessage = '';
     
     console.log('📡 Calling backend to sync Zoom meetings...');
-    console.log('📡 Request URL: http://localhost:3000/api/zoom/sync-meetings');
+  // console.log('📡 Request URL: ' + environment.apiUrl + '/zoom/sync-meetings');
     console.log('📡 Auth token preview:', this.authService.getToken()?.substring(0, 20) + '...');
     
     // Call backend service to sync meetings
